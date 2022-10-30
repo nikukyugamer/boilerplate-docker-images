@@ -2,6 +2,10 @@
 **/mysql_data/*
 !**/mysql_data/.keep
 
+# PostgreSQL
+**/postgresql_data/*
+!**/postgresql_data/.keep
+
 # Logs
 logs
 *.log

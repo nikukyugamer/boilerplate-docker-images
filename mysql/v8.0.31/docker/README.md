@@ -38,7 +38,7 @@ $ mkdir mysql_data
 ### コンテナの中に入る方法
 
 ```bash
-$ docker exec -it YOUR_mysql mysql -uroot -pfoobar
+$ docker exec -it your_mysql_container_name mysql -uroot -pfoobar
 ```
 
 ### 接続チェック

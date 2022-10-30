@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  postgresql:
+    image: postgres:15.0
+    container_name: your_postgresql_container_name
+    environment:
+      - POSTGRES_INITDB_ARGS
+      - POSTGRES_USER
+      - POSTGRES_PASSWORD
+      # 以下は Optional な値である
+      # - PGDATA
+      # - POSTGRES_DB
+      # - POSTGRES_HOST_AUTH_METHOD: trust
+    ports:
+      - 23456:5432
+    volumes:
+      - type: bind
+        source: ./postgresql_data/pgdata
+        target: /var/lib/postgresql/data
+    restart: always
