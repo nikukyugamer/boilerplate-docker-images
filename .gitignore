@@ -1,3 +1,7 @@
+# MySQL
+**/mysql_data/*
+!**/mysql_data/.keep
+
 # Logs
 logs
 *.log
