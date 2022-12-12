@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
   postgresql:
-    image: postgres:15.0
+    image: postgres:15.1
     container_name: your_postgresql_container_name
     environment:
       - POSTGRES_INITDB_ARGS
@@ -11,6 +11,7 @@ services:
       # 以下は Optional な値である
       # - PGDATA
       # - POSTGRES_DB
+      # 以下を設定するとパスワード無しでも設定できるが、セキュリティ上の問題があるので注意
       # - POSTGRES_HOST_AUTH_METHOD: trust
     ports:
       - 23456:5432
